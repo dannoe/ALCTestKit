@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Authors>Dustin Campbell, Ivan Yochev, Cezary Piątek, Christoph Stuber</Authors>
+    <Title>ALCTestKit</Title>
+    <Description>A lightweight framework for creating unit tests for AL diagnostic analyzers, code fixes and refactorings. This is a of fork of RoslynTestKit, which is a fork of Dustin Campbell's library RoslynNUnitLight - this version is test framework independent.</Description>
+    <Copyright>Copyright 2015-2024 by Dustin Campbell, Ivan Yochev, Cezary Piątek, Christoph Stuber</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dannoe/ALCTestKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dannoe/ALCTestKit</RepositoryUrl>
+    <PackageTags>AL CodeAnalysis test testing tdd analyzer fixes refactor refactoring business-central bc</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Language>en-US</Language>
+    <PackageId>ALCTestKit</PackageId>
+    <Product>ALCTestKit</Product>
+    <LangVersion>latest</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>portable</DebugType>
+    <Nullable>enable</Nullable>
+    <Company>Dustin Campbell, Ivan Yochev, Cezary Piątek, Christoph Stuber</Company>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\License.txt" Package="true" PackagePath="License.txt" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="ALC.Analyzer.Dlls" Version="14.0.1070882" />
+    <PackageReference Include="ApprovalTests" Version="4.2.0" />
+    <PackageReference Include="DiffPlex" Version="1.5.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" />
+     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+     <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+  </ItemGroup>
+</Project>
