@@ -1,24 +1,25 @@
-# RoslynTestKit
+# ALCTestKit
 
-A lightweight framework for writing unit tests for Roslyn diagnostic analyzers, code fixes, refactorings and completion providers.
-This is a port of [RoslynNUnitLight.NetStandard](https://github.com/phoenix172/RoslynNUnitLight.NetStandard). The main reasons to create a fork that is independent were:
-
-- make the library independent of the test framework
-- decrease response time for reported issues
-
+A lightweight framework for writing unit tests for AL diagnostic analyzers, code fixes, refactorings and completion providers.
+This is fork of [RoslynTestKit](https://github.com/cezarypiatek/RoslynTestKit) which is a port of [RoslynNUnitLight.NetStandard](https://github.com/phoenix172/RoslynNUnitLight.NetStandard).
 
 ### Quick Start
 
-1. Install the [SmartAnalyzers.RoslynTestKit ](https://www.nuget.org/packages/SmartAnalyzers.RoslynTestKit/)
-   package from NuGet into your project.
+1. Install the [ALCTestKit](https://www.nuget.org/packages/ALCTestKit/) package from NuGet into your project.
 2. Create appropriate test fixture using `RoslynFixtureFactory`
 3. Fix the fixture to perform assertion!
 
 ### Code location markers
 
-RoslynTestKit accepts strings that are marked up with ```[|``` and ```|]``` to identify a particular span. This could represent the span of an expected
+ALCTestKit accepts strings that are marked up with ```[|``` and ```|]``` to identify a particular span. This could represent the span of an expected
 diagnostic or the text selection before a refactoring is applied. 
 Instead of the markers you can also provide line number to locate the place of expected diagnostic.
+
+---
+
+### The now following text is not updated for ALTestKit yet. Feel free to create contributions to improve this document.
+
+---
 
 ### Framework dependencies
 
@@ -277,8 +278,3 @@ From line 124:
 - ········public·string·BankName·{·get;·set;·}␍␊
 + ············public·string·BankName·{·get;·set;·}␍␊
 ```
-
-
-However, when the test is run with the attached debugger, an external `diff tool` is launched to present the differences. RoslynTestKit is using under the hood the [ApprovalTests.Net](https://github.com/approvals/ApprovalTests.Net) so a wide range of diff tools on `Windows`, `Linux` and `Mac` are supported.
-
-![example visual diff](doc/diff.png)

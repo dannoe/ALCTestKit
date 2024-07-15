@@ -12,6 +12,7 @@
     <Copyright>Copyright 2015-2024 by Dustin Campbell, Ivan Yochev, Cezary Piątek, Christoph Stuber</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/dannoe/ALCTestKit</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/dannoe/ALCTestKit</RepositoryUrl>
     <PackageTags>AL CodeAnalysis test testing tdd analyzer fixes refactor refactoring business-central bc</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
@@ -27,6 +28,7 @@
   
   <ItemGroup>
     <None Include="..\..\License.txt" Package="true" PackagePath="License.txt" />
+    <None Include="..\..\README.md" Package="true" PackagePath="README.md" />
   </ItemGroup>
   
   <ItemGroup>
