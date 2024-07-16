@@ -1,7 +1,7 @@
 # ALCTestKit
 
 A lightweight framework for writing unit tests for AL diagnostic analyzers, code fixes, refactorings and completion providers.
-This is fork of [RoslynTestKit](https://github.com/cezarypiatek/RoslynTestKit) which is a port of [RoslynNUnitLight.NetStandard](https://github.com/phoenix172/RoslynNUnitLight.NetStandard).
+This is a fork of [RoslynTestKit](https://github.com/cezarypiatek/RoslynTestKit) which is a port of [RoslynNUnitLight.NetStandard](https://github.com/phoenix172/RoslynNUnitLight.NetStandard).
 
 ### Quick Start
 
